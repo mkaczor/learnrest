@@ -14,6 +14,7 @@
     <modules>
         <module>learnrest-spring-client</module>
         <module>learnrest-spring-server</module>
+        <module>learnrest-spring-bookmarks</module>
     </modules>
 
     <dependencyManagement>
