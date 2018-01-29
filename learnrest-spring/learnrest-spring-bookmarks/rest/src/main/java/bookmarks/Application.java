@@ -17,6 +17,7 @@ public class Application {
     @Bean
     CommandLineRunner init(AccountRepository accountRepository,
                            BookmarkRepository bookmarkRepository) {
+        System.out.println("Initializing....!");
         return (evt) -> Arrays.asList(
                 "jhoeller,dsyer,pwebb,ogierke,rwinch,mfisher,mpollack,jlong".split(","))
                 .forEach(
@@ -29,5 +30,4 @@ public class Application {
                                     "http://bookmark.com/2/" + a, "A description"));
                         });
     }
-
 }
